@@ -12,17 +12,14 @@ const defaultState = [
 const reducer = (state = defaultState, action) => {
     switch (action.type) {
         case ADD_NOTE:
-            if (action.payload.value === undefined || action.payload.value === "" || action.payload.value === null || action.payload.value.length > 300 || action.payload.data === undefined)
-                return state
-            else
-                return [...state, {
-                    id: state.length + 1,
-                    note: action.payload.value,
-                    date: new Date(),
-                    temperature: action.payload.data.main.feels_like,
-                    icon: action.payload.data.weather[0].icon
-                    }
-                ];
+            return [...state, {
+                id: state.length + 1,
+                note: action.payload.value,
+                date: new Date(),
+                temperature: action.payload.data.main.feels_like,
+                icon: action.payload.data.weather[0].icon
+            }
+            ];
 
         case DELETE_NOTE:
             return state.filter(it => it.id !== action.payload);
