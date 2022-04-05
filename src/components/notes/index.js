@@ -21,7 +21,7 @@ function Notes() {
                     <div className="img-container">
                         <img src={`http://openweathermap.org/img/wn/${icon}@2x.png`} alt={`${icon}-icon`}></img>
                     </div>
-                    <p>{Math.round(temperature - 273)}&#xb0;C</p>
+                    <p>{Math.round(temperature - 273,15)}&#xb0;C</p>
                     <p>{moment(date).format("D MMM YYYY")}</p>
                     <p>{moment(date).format("HH:mm")}</p>
                 </div>
