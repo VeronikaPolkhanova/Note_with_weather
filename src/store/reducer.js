@@ -16,7 +16,7 @@ const reducer = (state = defaultState, action) => {
                 id: state.length + 1,
                 note: action.payload.value,
                 date: new Date(),
-                temperature: action.payload.data.main.feels_like,
+                temperature: action.payload.data.main.temp,
                 icon: action.payload.data.weather[0].icon
             }
             ];

@@ -17,7 +17,6 @@ function Input() {
     }, []);
 
     const [value, setValue] = useState("");
-
     const handleSubmit = (event) => {
         event.preventDefault();
         if (value === undefined || value === "" || value === null || value.length > 300) {
