@@ -1,12 +1,9 @@
-import Input from './components/input';
-import Notes from './components/notes';
+import React from 'react';
+import NoteList from './components/noteList';
 
 function App() {
   return (
-    <div className="App">
-      <Notes />
-      <Input />
-    </div>
+    <NoteList />
   );
 }
 

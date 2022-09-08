@@ -1,0 +1,15 @@
+.note-list{
+    margin: 5% 30%;
+    padding: 20px;
+    border: 2px solid rgba(74, 84, 102, 0.171);
+}
+@media (min-width: 600px) and (max-width: 1200px) { 
+    .note-list{
+        margin: 5% 10%;
+    }
+}
+@media (min-width: 0px) and (max-width: 600px) { 
+    .note-list{
+        margin: 0%;
+    }
+}
